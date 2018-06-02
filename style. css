@@ -1,0 +1,187 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+}
+
+.wrapper {
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 34px;
+}
+
+.main {
+	width: 100%;
+	height: 85vh;
+	background: url(km/bgi.png) top center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.header {
+	padding-top: 40px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;/*repeat(auto-fill, minmax(847px, 1fr));*/
+}
+
+.left-side a {
+	text-decoration: none;
+	margin-right: 15px;
+}
+
+.left-side p {
+	display: inline-block;
+	font-size: 18px;
+	line-height: 27px;
+	color: white;
+	margin: 0;
+}
+
+.right-side {
+	justify-self: end;
+	-ms-align-self: center;
+	align-self: center;
+	text-align: right;
+}
+
+@media screen and (max-width: 847px) {
+	.right-side {
+	justify-self: start;
+	-ms-align-self: center;
+	align-self: center;
+	}
+}
+
+.tel {
+	color: white;
+	font-size: 26px;
+	line-height: 28px;
+}
+
+.right-side a {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+	line-height: 20px;
+	border-bottom: 1px dashed white;
+
+}
+
+.right-side a:hover {
+	border-bottom: 1px solid white;
+}
+
+.heading {
+	display: grid;
+	width: 100%;
+}
+
+.heading h1 {
+	color: white;
+	text-align: center;
+	margin-top: 170px;
+	font-size: 34px;
+}
+
+.heading .text-banner {
+	font-size: 34px;
+	font-weight: bold;
+	line-height: 65px;
+	position: relative;
+	margin: 0 auto;
+	background-color: yellow;
+	max-width: 810px;
+	width: 100%;
+	text-align: center;
+}
+
+.heading .preferences {
+	color: white;
+	text-align: center;
+	max-width: 810px;
+	width: 100%;
+	position: relative;
+	margin: 30px auto 0;
+	letter-spacing: 0.6px;
+	line-height: 2;
+}
+
+.button-gallery {
+	display: block;
+	font-size: 26px;
+	color: white;
+	max-width: 330px;
+	width: 100%;
+	height: 77px;
+	border: 2px solid yellow;
+	border-radius: 38px;
+	background: transparent;
+	position: relative;
+	margin: 110px auto 0;
+	transition: all 0.3s;
+}
+
+.button-gallery:hover {
+	background: yellow;
+	color: black;
+}
+
+.heading a {
+	display: inline-block;
+	justify-self: center;
+	text-decoration: none;
+	color: white;
+	border-bottom: 1px dashed white;
+	letter-spacing: 0.8px;
+	opacity: 0.6;
+	transition: all 0.5s;
+	margin-top: 20px;
+}
+
+.heading a:hover {
+	opacity: 1;
+}
+
+.photo {
+margin-top: 60px;
+margin-bottom: 95px;
+}
+
+.photo h1 {
+	margin: 0 0 50px 0;
+	line-height: 38px;
+	text-align: center;
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 350px);
+	grid-gap: 7px;
+	justify-content: center;
+}
+
+.gallery-category {
+	display: grid;
+	width: 100%;
+	height: 277px;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	text-decoration: none;
+}
+
+.gallery-category span {
+	display: block;
+	color: white;
+	background-color: rgba(0,0,0, .8);
+	font-size: 24px;
+	line-height: 2;
+	text-align: center;
+	align-self: end;
+}
