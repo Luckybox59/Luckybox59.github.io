@@ -79,3 +79,13 @@ body {
 	text-transform: uppercase;
 	cursor: pointer;
 }
+
+@media only screen and (max-width:480px) {
+	.menu {
+		display:none;
+	}
+	.welcome {
+		text-align: center;
+		margin-top: 10vh;
+	}
+}
