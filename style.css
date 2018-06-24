@@ -1,18 +1,17 @@
 ﻿body {
 	margin: 0;
 	padding: 0;
+	font-family: Arial;
 }
 
 h2 {
 	font-weight: bold;
-	font-family: Arial;
 	font-size: 40px;
 	text-transform: uppercase;
 	line-height: 1;
 }
 
 p {
-	font-family: Arial;
 	font-size: 15px;
 	color: #777777;
 }
@@ -81,7 +80,6 @@ p {
 .welcome h1 {
 	color: #fff;
 	font-size: 75px;
-	font-family: Arial;
 	font-weight: bold;
 	text-transform: uppercase;
 	margin-bottom: 50px;
@@ -96,9 +94,13 @@ p {
 	padding: 25px 50px;
 	font-size: 18px;
 	font-weight: bold;
-	font-family: Arial;
 	text-transform: uppercase;
 	cursor: pointer;
+}
+
+.services {
+	height: 500px;
+	background-color:white;
 }
 
 .services .heading {
@@ -109,6 +111,28 @@ p {
 	margin: 0;
 }
 
+.services-content {
+	display: flex;
+	margin-top: 80px;
+	justify-content: space-between;
+}
+
+.services-content a {
+	text-decoration: none;
+	color: black;
+}
+
+.services-content div {
+	text-align: center;
+	width: 270px;
+	padding: 0 5px;
+}
+
+.services-content p {
+	font-size: 13px;
+	line-height: 1.6;
+	font-weight: bold;
+}
 
 
 @media only screen and (max-width: 1050px) {
@@ -124,7 +148,14 @@ p {
 	.menu {
 		display:none;
 	}
+
+	.services-content {
+	flex-wrap: wrap;
+	margin-top: 80px;
+	justify-content: center;
+	}
 }
+
 
 @media only screen and (max-width: 480px) {
 	.home {
@@ -152,3 +183,5 @@ p {
 		font-size: 15px;
 	}
 }
+
+
