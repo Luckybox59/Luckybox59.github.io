@@ -149,9 +149,47 @@ a {
 	margin-top: 80px;
 }
 
-.portfolio-content img {
+.portfolio-content a {
 	padding: 5px;
 }
+
+.about-us {
+	height: 1500px;
+	padding-top: 188px;
+	padding-bottom: 60px;
+	background-color: white;
+}
+
+.about-us-content {
+
+	
+}
+
+.about-us-card {
+		display: flex;
+		margin-top: 80px;
+}
+
+.about-us-card img {
+	width: 170px;
+	background-size: cover;
+	border: 7px solid #f1f1f1;
+	border-radius: 50%;
+	flex-grow: 0;
+}
+
+.about-us-card .fantom {
+	max-width: 380px;
+	flex-grow: 1;
+}
+
+.wrapper-text {
+	width: 300px;
+	text-align: right;
+	padding: 0 40px;
+	flex-grow: 0;
+}
+
 
 
 @media only screen and (max-width: 1050px) {
@@ -191,7 +229,7 @@ a {
 
 @media only screen and (max-width: 480px) {
 	.home {
-		padding: 30px 0;
+		padding: 50px 0;
 		height: 100%;
 	}
 
