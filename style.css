@@ -53,13 +53,12 @@ a {
 	padding: 0 10px;
 }
 
-.main-menu input [type="checkbox"] {
+.main-menu [type="checkbox"] {
 	display: none;
 }
 
-#menu-button {
+.toggle-menu {
 	display: none;
-
 }
 
 .menu {
@@ -249,13 +248,13 @@ a {
 }
 
 @media only screen and (max-width: 695px) {
-	/*.main-menu {
-		position: relative;
-	}
-*/
+
 	.menu {
 		display:none;
+	}
 
+	.toggle-menu {
+		display: block;
 	}
 
 	.services-content {
