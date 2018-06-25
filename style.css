@@ -1,4 +1,5 @@
-﻿body {
+﻿/*start GENERAL*/
+body {
 	margin: 0;
 	padding: 0;
 	font-family: Arial;
@@ -30,6 +31,9 @@ a {
 .heading {
 	text-align: center;
 }
+/*end GENERAL*/
+
+/*start section HOME*/
 
 .home {
 	margin: 0 auto;
@@ -49,7 +53,11 @@ a {
 	padding: 0 10px;
 }
 
-#menu_button {
+.main-menu input [type="checkbox"] {
+	display: none;
+}
+
+#menu-button {
 	display: none;
 
 }
@@ -70,6 +78,10 @@ a {
 	font-size: 14px;
 	color: #fff;
 }
+
+/*end section HOME*/
+
+/*start section WELCOME*/
 
 .welcome {
 	text-align: center;
@@ -102,6 +114,10 @@ a {
 	text-transform: uppercase;
 	cursor: pointer;
 }
+
+/*end section WELCOME*/
+
+/*start section SERVICES*/
 
 .services {
 	padding-top: 120px;
@@ -137,6 +153,10 @@ a {
 	font-weight: bold;
 }
 
+/*end section SERVICES*/
+
+/*start section PORTFOLIO*/
+
 .portfolio {
 	padding-top: 188px;
 	padding-bottom: 60px;
@@ -153,16 +173,14 @@ a {
 	padding: 5px;
 }
 
+/*end section PORTFOLIO*/
+
+/*start section ABOUT US*/
+
 .about-us {
-	height: 1500px;
 	padding-top: 188px;
 	padding-bottom: 60px;
 	background-color: white;
-}
-
-.about-us-content {
-
-	
 }
 
 .about-us-card {
@@ -189,59 +207,81 @@ a {
 	flex-grow: 0;
 }
 
+/*end section ABOUT US*/
+
+/*start FOOTER*/
+
+.footer p {
+	text-align: center;
+	font-size: 13px;
+	padding-top: 50px;
+}
+
+.footer a {
+	color: #777777;
+}
+
+.footer a:hover {
+	border-bottom: 1px dashed;
+}
+
+/*end FOOTER*/
+
 
 
 @media only screen and (max-width: 1050px) {
+
 	.header {
 		margin: 0 45px;
 	}
 
 	.portfolio {
-	padding-top: 120px;
-	padding-bottom: 50px;
-	background-color: #f7f7f7;
-
-}
+		padding-top: 120px;
+		padding-bottom: 50px;
+		background-color: #f7f7f7;
+	}
 
 	.portfolio-content {
-	justify-content: center;
-	flex-wrap: wrap;
+		justify-content: center;
+		flex-wrap: wrap;
 	}
 
 }
 
 @media only screen and (max-width: 695px) {
-	#menu_button {
-	display: block;
-}
+	/*.main-menu {
+		position: relative;
+	}
+*/
 	.menu {
 		display:none;
+
 	}
 
 	.services-content {
-	flex-wrap: wrap;
-	margin-top: 80px;
-	justify-content: center;
+		flex-wrap: wrap;
+		margin-top: 80px;
+		justify-content: center;
 	}
 
 	.about-us-card {
 		flex-wrap: wrap;
 		justify-content: center;
 		padding: 0 10px;
-}
+	}
 
-.about-us-card img {
-	order: 1;
-}
+	.about-us-card img {
+		order: 1;
+	}
 
-.wrapper-text {
-	order: 2;
-	padding: 0 10px;
-}
+	.wrapper-text {
+		order: 2;
+		padding: 0 10px;
+	}
 
-.fantom {
-	display: none;
-}
+	.fantom {
+		display: none;
+	}
 
 }
 
